@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="prevBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#0a1124"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101936"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b0ff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="940" height="560" fill="url(#prevBg)"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="940" height="50" fill="url(#headerGrad)" stroke="#18284c" stroke-width="1"/>
+  <circle cx="25" cy="25" r="6" fill="#ff5252"/>
+  <circle cx="45" cy="25" r="6" fill="#ffb300"/>
+  <circle cx="65" cy="25" r="6" fill="#00e676"/>
+  <text x="95" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">🛰️ CDMARelayForge Pro | CCSDS 415.1-B-1 2 GHz CDMA Space Relay Studio (v1.0.0)</text>
+  <rect x="710" y="12" width="210" height="26" rx="4" fill="#00e5ff" fill-opacity="0.15" stroke="#00e5ff" stroke-width="1"/>
+  <text x="815" y="29" font-family="monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">RELAY: NASA TDRSS SSA LINK</text>
+
+  <!-- Tab Bar -->
+  <rect x="0" y="50" width="940" height="35" fill="#080e1e" stroke="#18284c" stroke-width="1"/>
+  <rect x="20" y="50" width="220" height="35" fill="#101b36" stroke-bottom="#00e5ff" stroke-width="2"/>
+  <text x="130" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#00e5ff" text-anchor="middle">DSSS CDMA Waveform Studio</text>
+  <text x="360" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="500" fill="#8da4cb" text-anchor="middle">Coherent Turnaround &amp; Ranging</text>
+  <text x="600" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="500" fill="#8da4cb" text-anchor="middle">10-Point Normative Auditor</text>
+
+  <!-- Left: Controls & Form -->
+  <rect x="20" y="100" width="435" height="435" rx="6" fill="#0a1124" stroke="#18284c" stroke-width="1"/>
+  <rect x="20" y="100" width="435" height="35" rx="6" fill="#121e3c"/>
+  <text x="35" y="123" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f0f4fc">SPREAD SPECTRUM DSSS CONFIGURATION</text>
+  <rect x="360" y="108" width="85" height="20" rx="3" fill="#00e676" fill-opacity="0.15"/>
+  <text x="402" y="122" font-family="monospace" font-size="9" font-weight="700" fill="#00e676" text-anchor="middle">COHERENT</text>
+
+  <g transform="translate(35, 150)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#8da4cb">Link Service &amp; Modulation Format</text>
+    <rect x="0" y="8" width="405" height="28" rx="4" fill="#040713" stroke="#18284c"/>
+    <text x="10" y="26" font-family="monospace" font-size="10" fill="#00e5ff">Forward Service: UQPSK (I:Q = 10:1 Power Ratio)</text>
+
+    <text x="0" y="55" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#8da4cb">Chip Rate (Rc) &amp; Carrier Frequency</text>
+    <rect x="0" y="63" width="405" height="28" rx="4" fill="#040713" stroke="#18284c"/>
+    <text x="10" y="81" font-family="monospace" font-size="10" fill="#00e676">Rc = 3.087 Mchip/s | Forward Freq: 2067.5000 MHz</text>
+
+    <text x="0" y="110" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#8da4cb">Preferred Pair Order-10 Gold Code (Length 1023)</text>
+    <rect x="0" y="118" width="405" height="28" rx="4" fill="#040713" stroke="#18284c"/>
+    <text x="10" y="136" font-family="monospace" font-size="10" fill="#ffffff">Shift Offset Tau: 12 Clocks | f1(x)=1+x^3+x^10, f2(x)=...</text>
+
+    <text x="0" y="165" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#8da4cb">Transponder Coherent Turnaround Ratio (§5.2)</text>
+    <rect x="0" y="173" width="405" height="28" rx="4" fill="#040713" stroke="#18284c"/>
+    <text x="10" y="191" font-family="monospace" font-size="10" fill="#ffb300">Exact 240 / 221 -> Coherent Return: 2245.2489 MHz</text>
+
+    <text x="0" y="220" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#8da4cb">Earth Surface Power Spectral Density (PSD) Flux Limit</text>
+    <rect x="0" y="228" width="405" height="28" rx="4" fill="#040713" stroke="#18284c"/>
+    <text x="10" y="246" font-family="monospace" font-size="10" fill="#7c4dff">Surface PSD: -176.75 dBW/m²/4kHz (Margin +22.75 dB vs ITU)</text>
+
+    <rect x="0" y="280" width="405" height="34" rx="4" fill="url(#btnGrad)"/>
+    <text x="202" y="302" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" fill="#000" text-anchor="middle">⚡ SYNTHESIZE DSSS CDMA WAVEFORM</text>
+  </g>
+
+  <!-- Right: Dissection Output -->
+  <rect x="475" y="100" width="445" height="435" rx="6" fill="#0a1124" stroke="#18284c" stroke-width="1"/>
+  <rect x="475" y="100" width="445" height="35" rx="6" fill="#121e3c"/>
+  <text x="490" y="123" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f0f4fc">BASEBAND I/Q CHIP STREAM &amp; RANGING TELEMETRY</text>
+  <rect x="800" y="108" width="110" height="20" rx="3" fill="#00e676" fill-opacity="0.15"/>
+  <text x="855" y="122" font-family="monospace" font-size="9" font-weight="700" fill="#00e676" text-anchor="middle">DSSS ACTIVE</text>
+
+  <rect x="490" y="145" width="415" height="375" rx="4" fill="#02050c" stroke="#142036"/>
+  <g transform="translate(505, 170)" font-family="monospace" font-size="10">
+    <text x="0" y="0" fill="#00e5ff">[+] CCSDS 415.1-B-1 Forward Service Link Synthesized:</text>
+    <text x="0" y="16" fill="#8da4cb">  Modulation:       UQPSK (I:Q = 10:1 Power Ratio)</text>
+    <text x="0" y="32" fill="#8da4cb">  RF Center Freq:   2067.5000 MHz (S-Band Relay Uplink)</text>
+    <text x="0" y="48" fill="#00e676">  Command Channel:  Amplitude I = 3.162 (+10 dB Power Priority)</text>
+    <text x="0" y="64" fill="#8da4cb">  Range Channel:    Amplitude Q = 1.000 (Dedicated Range Code)</text>
+    
+    <text x="0" y="90" fill="#00e5ff">[+] Preferred Pair Order-10 Gold Code (1023 Chips):</text>
+    <text x="0" y="106" fill="#7c4dff">  Shift Tau:        12 clocks | Code Period: 0.331 ms</text>
+    <text x="0" y="122" fill="#8da4cb">  Chips (Preview):  0011100010101100111100110010101011100101...</text>
+    <text x="0" y="138" fill="#00e676">  Auto-Correlation: Lag 0 = 1.0000 | Sidelobes &lt; 0.0635 (3-Valued)</text>
+    
+    <text x="0" y="164" fill="#00e5ff">[+] High-Precision Two-Way PN Ranging Solution:</text>
+    <text x="0" y="180" fill="#ffb300">  Observed RTLT:    0.250000 s (One-Way Light Time: 0.125000 s)</text>
+    <text x="0" y="196" fill="#ffffff">  Calculated Range: 37,474.06 km (Sub-Meter Precision &lt;0.15 m)</text>
+    <text x="0" y="212" fill="#00e676">  Transponder Ratio:240 / 221 (Return Freq: 2245.2489 MHz)</text>
+    <text x="0" y="228" fill="#8da4cb">  Carrier Doppler:  +15.0 kHz -> Radial Velocity = -1001.42 m/s</text>
+    <text x="0" y="244" fill="#8da4cb">  Epoch Ambiguity:  51.1 km interval (Resolved by orbit propagator)</text>
+    
+    <text x="0" y="272" fill="#00e5ff">[+] Power Spectral Density (PSD) Compliance:</text>
+    <text x="0" y="288" fill="#00e676">  Surface Flux:     -176.75 dBW/m²/4kHz (&lt; -154 dBW ITU Limit, PASS)</text>
+    <text x="0" y="312" fill="#00e676">[+] Normative Auditor: 10/10 Requirements Certified</text>
+  </g>
+</svg>
